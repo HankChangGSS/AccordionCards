@@ -28,41 +28,6 @@ for (let i = 0; i < toggles.length; i++) {
     });
 }
 
-
-
-/*
-var {
-    laws
-} = {
-    "laws": [{
-            "article": "第 1 條",
-            "contents": [
-                "本法所稱保險",
-                "根據前項所訂之契約"
-            ],
-            "audio": "https://sodomcode.com/2022/06/26/chtlaw/%E4%BF%9D%E9%9A%AA%E6%B3%95/00001_000m01.mp3"
-        }, {
-            "article": "第 2 條",
-            "contents": [
-                "ver 1",
-                "ver 1a",
-                "ver 2"
-            ],
-            "audio": "https://sodomcode.com/2022/06/26/chtlaw/%E4%BF%9D%E9%9A%AA%E6%B3%95/00001_000m02.mp3"
-
-        }, {
-            "article": "第 3 條",
-            "contents": [
-                "ver 1",
-                "ver 2"
-            ],
-            "audio": "https://sodomcode.com/2022/06/26/chtlaw/%E4%BF%9D%E9%9A%AA%E6%B3%95/00001_000m03.mp3"
-
-        }
-    ]
-};
-*/
-
 Refresh();
 
 function Refresh() {
@@ -90,8 +55,9 @@ function Refresh() {
 		var sound = document.createElement('audio');
 		sound.id = 'audio-player';
 		sound.controls = 'controls';
-		sound.src = url + laws[ran].ArticleContents[j][0] + '.mp3';
-		console.log(url + laws[ran].ArticleContents[j][0] + '.mp3');
+		//sound.src = 'https://airandom.com/B0000001/00001_000m01.wav';
+		sound.src = url + laws[ran].ArticleContents[j][0] + '.wav';
+		//console.log(url + laws[ran].ArticleContents[j][0] + '.mp3');
 		sound.type = 'audio/mpeg';
 		divAudio.appendChild(sound);
     }
