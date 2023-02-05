@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>保險法</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <button class="toggle">
+				<h3 id="article"></h3>
+				<i class="fas fa-plus icon"></i>
+            </button>
+            <div class="content" id="contents">
+			</div>
+			<div style="display: flex;">
+			  <div style="flex-grow: 1;"></div>
+			  <div style="cursor: pointer;"><i id="Refresh" class="fas fa-chevron-circle-right fa-2x" onclick="Refresh();"></i></div>
+			</div>
+		</div>
+    </div>
+    <!-- Script-->
+	<script type="text/javascript" src="data.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
